@@ -14,18 +14,7 @@
         <module>ejb-test-common</module>
     </modules>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>org.jboss.as</groupId>
-                <artifactId>jboss-as-ejb-client-bom</artifactId>
-                <version>7.1.0.Final</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
+    <!--All projects depends on the javaee-api-->
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
