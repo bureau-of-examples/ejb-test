@@ -16,13 +16,12 @@ public class EjbClient {
          System.out.println("Connect to the server...");
 
          Properties properties = new Properties();
-         properties.put("jboss.naming.client.ejb.context", true);
+         properties.put("jboss.naming.client.ejb.context", true); //Must set this to true without jboss-ejb-client.properties file.
          InitialContext initialContext = new InitialContext(properties);
          Context serverContext = (Context)initialContext.lookup("ejb_test_server_EJB_exploded");
          SampleServiceRemote sampleService = (SampleServiceRemote) serverContext.lookup("SampleServiceStatelessBean!zhy2002.ejbtest.SampleServiceRemote");
          String serverMessage = sampleService.getMessage("EjbClient");
          System.out.println(serverMessage);
-
 
      }
 }

@@ -9,4 +9,6 @@ import javax.ejb.Remote;
 public interface SampleServiceRemote {
 
     String getMessage(String clientName);
+
+    Integer getIdentityHashcode();
 }
