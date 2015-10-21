@@ -5,7 +5,7 @@ import javax.ejb.Stateless;
 /**
  *
  */
-@Stateless
+@Stateless(name = "SampleServiceStatelessBean")
 public class SampleServiceStatelessBean implements SampleServiceRemote {
 
     public String getMessage(String clientName) {

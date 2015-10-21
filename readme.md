@@ -5,3 +5,12 @@ How to set up JBoss
 
 Below is a good reference for setting up standalone JNDI based EJB client:
 http://stackoverflow.com/questions/14336478/jboss-7-jndi-lookup
+
+Reference:
+https://docs.jboss.org/author/display/AS71/Remote+EJB+invocations+via+JNDI+-+EJB+client+API+or+remote-naming+project
+
+JBoss AS Developer Guide:
+https://docs.jboss.org/author/display/AS71/Developer+Guide
+
+EJB life cycle:
+https://docs.oracle.com/javaee/7/tutorial/ejb-intro007.htm#GIPLJ
